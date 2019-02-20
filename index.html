@@ -42,15 +42,14 @@
 
     console.log("Declare functions..............................")
 
-    function add(x, y) {
+    function prod(x, y) {
       return x * y
     }
-    console.log("add=" + add)
-
+    console.log("prod= "+prod)
     console.log("Declare event listeners .......................")
 
     document.addEventListener("dblclick", function () {
-      console.log("add(a,b)=" + add(a, b))
+      console.log("prod(a,b)=" + prod(a, b))
     })
 
     document.getElementById("clicker").addEventListener("click", function () {
@@ -59,7 +58,7 @@
       console.log("i=" + i)
       const j = parseInt(document.getElementById("secondNumber").value)
       console.log("j=" + j)
-      const ans = s + ", your sum is " + add(i, j) + "."
+      const ans = s + ", total number of people are " + prod(i, j) + "."
       document.getElementById("result").innerHTML = ans
     })
 

@@ -21,8 +21,11 @@
     <p>Enter your ID:
       <input id="guest" type="number" value="26">
     </p>
-
     
+   <p>Enter your Name:
+      <input id="guest1" type="string" value="Prashanth">
+    </p>
+    <br>
       
       <p>Enter your peoplePerCar number:
       <input id="firstNumber" type="number" value="12">
@@ -54,6 +57,7 @@
 
     document.getElementById("clicker").addEventListener("click", function () {
       const s = document.getElementById("guest").value
+      const t = document.getElementById("guest1").value
       const i = parseInt(document.getElementById("firstNumber").value)
       console.log("i=" + i)
       const j = parseInt(document.getElementById("secondNumber").value)

@@ -23,7 +23,7 @@
     </p>
     
    <p>Enter your Name:
-      <input id="guest1" type="string" value="Prashanth">
+      <input id="guest1" type="text" value="Prashanth">
     </p>
     <br>
       
@@ -56,7 +56,7 @@
     })
 
     document.getElementById("clicker").addEventListener("click", function () {
-      const s = document.getElementById("guest").value
+      const s = parseInt(document.getElementById("guest").value)
       const t = document.getElementById("guest1").value
       const i = parseInt(document.getElementById("firstNumber").value)
       console.log("i=" + i)
